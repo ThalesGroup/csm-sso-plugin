@@ -1,0 +1,58 @@
+<!--
+  (c) 2025 Thales copyrights
+  This file is distributed under Apache-2.0 license.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSM SSO Plugin by Arpit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="configForm">
+      <h1>CSM SSO Plugin</h1>
+      <label for="cmUrl">CipherTrust Manager URL:</label>
+      <input type="text" id="cmUrl" name="cmUrl" placeholder="https://xxx.xxx.xxx.xxx" required>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Your CM Username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Your CM Password" required>
+
+      <label for="apiAccessID">API Access ID:</label>
+      <input type="text" id="apiAccessID" name="apiAccessID" placeholder="p-xxxxxxxxxxxxx" required>
+
+      <label for="apiAccessKey">API Access Key:</label>
+      <input type="password" id="apiAccessKey" name="apiAccessKey" placeholder="xxxxxxxxx/xxxxxxxxxxxxx=" required>
+
+      <label for="akeylessURL">Akeyless URL:</label>
+      <input type="text" id="akeylessURL" name="akeylessURL" placeholder="https://vault.akeyless.io" required>
+
+      <label for="connectionName">Akeyless Connection Name:</label>
+      <input type="text" id="connectionName" name="connectionName" placeholder="Akeyless-CSM" required>
+
+      <button type="submit">Configure CSM</button>
+      <button type="button" id="checkStatusButton">Check SSO Status</button>
+
+      <div id="message" class="message"></div>
+    </form>
+
+    <div id="loadingOverlay" class="loading-overlay">
+      <div class="loading-spinner-container">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Processing</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "CSM SSO Plugin",
+  "version": "1.0.0",
+  "description": "Configure SSO to Akeyless from CipherTrust Manager and seamlessly enable Secrets-Manager Tile.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost:52920/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  }
+}
